@@ -16,7 +16,7 @@ class App extends React.Component {
         }
     }
     fetchingData(a) {
-        return fetch(`http://api.giphy.com/v1/gifs/trending?api_key=${this.state.key}&limit=${this.state.limit + a}`)
+        return fetch(`https://api.giphy.com/v1/gifs/trending?api_key=${this.state.key}&limit=${this.state.limit + a}`)
             .then(data => data.json())
     }
     getNews() {

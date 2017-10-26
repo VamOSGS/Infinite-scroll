@@ -21239,7 +21239,7 @@ var App = function (_React$Component) {
     _createClass(App, [{
         key: 'fetchingData',
         value: function fetchingData(a) {
-            return fetch('http://api.giphy.com/v1/gifs/trending?api_key=' + this.state.key + '&limit=' + (this.state.limit + a)).then(function (data) {
+            return fetch('https://api.giphy.com/v1/gifs/trending?api_key=' + this.state.key + '&limit=' + (this.state.limit + a)).then(function (data) {
                 return data.json();
             });
         }
@@ -21447,7 +21447,6 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Challange = function Challange(props) {
-    console.log(props);
     return _react2.default.createElement(
         'div',
         { className: props.active ? 'challange active' : 'challange ' },
