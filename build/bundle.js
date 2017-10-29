@@ -21344,7 +21344,7 @@ var List = function (_React$Component) {
             var _this2 = this;
 
             this.list.addEventListener('scroll', function () {
-                var scrollCheck = _this2.list.scrollHeight - _this2.list.scrollTop - _this2.list.clientHeight < 40;
+                var scrollCheck = _this2.list.scrollHeight - _this2.list.scrollTop - _this2.list.clientHeight < 100;
                 if (scrollCheck) {
                     _this2.props.getNews();
                 }

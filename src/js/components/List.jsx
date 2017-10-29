@@ -7,7 +7,7 @@ class List extends React.Component {
     }
     scrolledCheck() {
         this.list.addEventListener('scroll', () => {
-            let scrollCheck =  this.list.scrollHeight -  this.list.scrollTop -  this.list.clientHeight < 40;
+            let scrollCheck =  this.list.scrollHeight -  this.list.scrollTop -  this.list.clientHeight < 100;
             if (scrollCheck) {
                 this.props.getNews()
             }
